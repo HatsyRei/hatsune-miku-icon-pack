@@ -2,10 +2,10 @@
 #
 # Upscale the legacy miku-hyoromo theme PNGs into icon-pack drawables.
 #
-# The originals are 72x72 (a handful are odd sizes). Modern launchers ask for up
-# to 192px on xxxhdpi, so everything is resampled to 192x192 with Lanczos and
-# padded to square on transparency. Output lands in drawable-nodpi so Android
-# never rescales them a second time.
+# The originals are 72x72 (a handful are odd sizes). 144 is an exact 2x of that
+# and is also what an xxhdpi/1080p launcher asks for, so the common case needs
+# no runtime scaling and the offline resample stays on an integer factor.
+# Output lands in drawable-nodpi so Android never rescales it a second time.
 #
 # Usage: tools/upscale.sh
 set -euo pipefail
@@ -14,7 +14,7 @@ cd "$(dirname "$0")/.."
 
 SRC="art/miku-hyoromo"
 OUT="app/src/main/res/drawable-nodpi"
-SIZE=192
+SIZE=144
 
 command -v convert >/dev/null || { echo "ImageMagick 'convert' not found" >&2; exit 1; }
 

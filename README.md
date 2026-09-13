@@ -120,18 +120,19 @@ all from `art/miku-hyoromo/` before every build:
 
 | Script | Output |
 | --- | --- |
-| `tools/upscale.sh` | `drawable-nodpi/*.png` — 192×192, Lanczos |
+| `tools/upscale.sh` | `drawable-nodpi/*.png` — 144×144, Lanczos |
 | `tools/gen_launcher_icon.sh` | `mipmap-*/ic_launcher.png` and the adaptive foreground |
 | `tools/gen_drawable_xml.py` | `res/xml/drawable.xml` |
 
 Only `appfilter.xml` is maintained by hand, since it encodes decisions rather
 than file listings.
 
-The originals are 72×72. They are resampled up to 192×192 because that is the
-size an xxxhdpi launcher asks for, and because doing it offline with Lanczos
-produces a better result than letting the launcher stretch a 72px bitmap with
-bilinear filtering at draw time. `drawable-nodpi` stops Android from scaling them
-a second time.
+The originals are 72×72, and they are resampled to 144×144 — an exact 2×. An
+integer factor resamples more cleanly than an awkward one, and 144 happens to be
+what an xxhdpi (1080p) launcher asks for, so on the most common class of phone
+nothing is scaled at run time at all. Doing the work offline with Lanczos also
+beats letting the launcher stretch a 72px bitmap with bilinear filtering at draw
+time. `drawable-nodpi` stops Android from scaling them a second time.
 
 ### One build-system trap
 
