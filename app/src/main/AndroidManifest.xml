@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MikuIconPack">
+
+        <!--
+          Launchers discover icon packs with queryIntentActivities() against their
+          own private action/category. There is no single Android standard, so a
+          pack advertises every dialect it wants to be found by. All of these
+          resolve to the same activity.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- ADW / ADWEx — origin of the appfilter.xml format -->
+            <intent-filter>
+                <action android:name="org.adw.launcher.THEMES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Nova Launcher (also honoured by Lawnchair, Niagara, Kvaesitso) -->
+            <intent-filter>
+                <action android:name="com.novalauncher.THEME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Apex Launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.anddoes.launcher.THEME" />
+            </intent-filter>
+
+            <!-- GO Launcher EX — what the original miku-hyoromo theme targeted -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.gau.go.launcherex.theme" />
+            </intent-filter>
+
+            <!-- LauncherPro -->
+            <intent-filter>
+                <action android:name="com.fede.launcher.THEME_ICONPACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Atom Launcher -->
+            <intent-filter>
+                <action android:name="com.dlto.atom.launcher.THEME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Lawnchair (legacy package id, still queried) -->
+            <intent-filter>
+                <action android:name="ch.deletescape.lawnchair.ICONPACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Smart Launcher -->
+            <intent-filter>
+                <action android:name="ginlemon.smartlauncher.THEMES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Action Launcher -->
+            <intent-filter>
+                <action android:name="com.actionlauncher.playstore.THEME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Sony Xperia Home — best effort; it falls back to appfilter.xml -->
+            <intent-filter>
+                <action android:name="com.sonymobile.home.ICON_PACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Phonemetra Turbo Launcher -->
+            <intent-filter>
+                <action android:name="com.phonemetra.turbo.launcher.THEME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
