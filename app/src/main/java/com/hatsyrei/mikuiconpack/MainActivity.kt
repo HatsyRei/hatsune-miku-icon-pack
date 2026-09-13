@@ -22,7 +22,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -106,7 +106,7 @@ private data class IconEntry(val drawable: String, val category: String?)
 private fun MikuIconPackTheme(content: @Composable () -> Unit) {
     val teal = Color(0xFF39C5BB)
     MaterialTheme(
-        colorScheme = lightColorScheme(primary = teal, secondary = teal),
+        colorScheme = darkColorScheme(primary = teal, secondary = teal),
         content = content,
     )
 }
@@ -118,7 +118,7 @@ private fun IconGrid(
     onPick: (String) -> Unit,
 ) {
     LazyVerticalGrid(
-        columns = GridCells.Adaptive(88.dp),
+        columns = GridCells.Fixed(4),
         contentPadding = PaddingValues(16.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),

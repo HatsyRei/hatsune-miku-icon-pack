@@ -12,7 +12,9 @@ telemetry, no permissions — just 29 icons and an `appfilter.xml`.
 [![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/HatsyRei/miku-icon-pack?style=for-the-badge&color=orange)](https://github.com/HatsyRei/miku-icon-pack/releases)
+[![Latest Release](https://img.shields.io/github/v/release/HatsyRei/hatsune-miku-icon-pack?style=for-the-badge&color=orange)](https://github.com/HatsyRei/hatsune-miku-icon-pack/releases)
+
+**Package name:** `com.hatsyrei.mikuiconpack`
 
 <table align="center">
 <tr>
@@ -131,6 +133,24 @@ to four things, all of which this pack implements:
    launcher's manual icon picker.
 4. **An activity that returns `Intent.ShortcutIconResource`** — so "long-press an
    app → Edit → tap the icon" can pull an icon out of the pack by hand.
+
+## Package
+
+| | |
+| --- | --- |
+| App name | Hatsune Miku Icon Pack |
+| Package name / application ID | `com.hatsyrei.mikuiconpack` |
+| Repository | <https://github.com/HatsyRei/hatsune-miku-icon-pack> |
+| Min SDK | 23 (Android 6.0) |
+| Permissions | none |
+
+The package name is what a launcher's icon pack picker identifies the pack by,
+and what `adb install`/`adb uninstall` take as an argument:
+
+```bash
+adb install app-release.apk
+adb shell pm uninstall com.hatsyrei.mikuiconpack
+```
 
 ## Contents
 

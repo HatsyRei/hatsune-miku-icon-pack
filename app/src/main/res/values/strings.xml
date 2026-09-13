@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Miku Icon Pack</string>
+    <string name="app_name">Hatsune Miku Icon Pack</string>
     <string name="pack_subtitle">%1$d icons ported from miku-hyoromo</string>
     <string name="pick_title">Pick an icon</string>
     <string name="howto_title">How to apply</string>
-    <string name="howto_body">This pack has no settings of its own. Open your launcher\'s settings, find the icon pack or theme option, and choose Miku Icon Pack.\n\nAny icon below can also be assigned by hand: long-press an app, choose Edit, then tap its icon.</string>
+    <string name="howto_body">This pack has no settings of its own. Open your launcher\'s settings, find the icon pack or theme option, and choose Hatsune Miku Icon Pack.\n\nAny icon below can also be assigned by hand: long-press an app, choose Edit, then tap its icon.</string>
     <string name="icon_content_description">%1$s icon</string>
 </resources>
