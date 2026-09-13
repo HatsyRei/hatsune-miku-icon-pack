@@ -1,14 +1,74 @@
-# Miku Icon Pack
+<div align="center">
+
+<img src="app/src/main/res/drawable-nodpi/icon.png" width="128" height="128" alt="Hatsune Miku Icon Pack logo" />
+
+# Hatsune Miku Icon Pack
 
 A port of hyoromo's 2010-era Hatsune Miku launcher themes into a modern Android
-icon pack that works on essentially any third-party launcher.
+icon pack that works on essentially any third-party launcher. No ads, no
+telemetry, no permissions — just 29 icons and an `appfilter.xml`.
+
+[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
+[![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/HatsyRei/miku-icon-pack?style=for-the-badge&color=orange)](https://github.com/HatsyRei/miku-icon-pack/releases)
+
+<table align="center">
+<tr>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/phone.png"><img src="app/src/main/res/drawable-nodpi/phone.png" width="100%" alt="Phone icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/messaging.png"><img src="app/src/main/res/drawable-nodpi/messaging.png" width="100%" alt="Messaging icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/browser.png"><img src="app/src/main/res/drawable-nodpi/browser.png" width="100%" alt="Browser icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/camera.png"><img src="app/src/main/res/drawable-nodpi/camera.png" width="100%" alt="Camera icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/music.png"><img src="app/src/main/res/drawable-nodpi/music.png" width="100%" alt="Music icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/maps.png"><img src="app/src/main/res/drawable-nodpi/maps.png" width="100%" alt="Maps icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/clock.png"><img src="app/src/main/res/drawable-nodpi/clock.png" width="100%" alt="Clock icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/settings.png"><img src="app/src/main/res/drawable-nodpi/settings.png" width="100%" alt="Settings icon" /></a></td>
+</tr>
+<tr>
+<td align="center"><sub><b>Phone</b></sub></td>
+<td align="center"><sub><b>Messaging</b></sub></td>
+<td align="center"><sub><b>Browser</b></sub></td>
+<td align="center"><sub><b>Camera</b></sub></td>
+<td align="center"><sub><b>Music</b></sub></td>
+<td align="center"><sub><b>Maps</b></sub></td>
+<td align="center"><sub><b>Clock</b></sub></td>
+<td align="center"><sub><b>Settings</b></sub></td>
+</tr>
+<tr>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/gmail.png"><img src="app/src/main/res/drawable-nodpi/gmail.png" width="100%" alt="Gmail icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/calendar.png"><img src="app/src/main/res/drawable-nodpi/calendar.png" width="100%" alt="Calendar icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/gallery.png"><img src="app/src/main/res/drawable-nodpi/gallery.png" width="100%" alt="Gallery icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/youtube.png"><img src="app/src/main/res/drawable-nodpi/youtube.png" width="100%" alt="YouTube icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/market.png"><img src="app/src/main/res/drawable-nodpi/market.png" width="100%" alt="Play Store icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/contacts.png"><img src="app/src/main/res/drawable-nodpi/contacts.png" width="100%" alt="Contacts icon" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/folder_open.png"><img src="app/src/main/res/drawable-nodpi/folder_open.png" width="100%" alt="Open folder art" /></a></td>
+<td width="12.5%"><a href="app/src/main/res/drawable-nodpi/allapp.png"><img src="app/src/main/res/drawable-nodpi/allapp.png" width="100%" alt="App drawer button" /></a></td>
+</tr>
+<tr>
+<td align="center"><sub><b>Gmail</b></sub></td>
+<td align="center"><sub><b>Calendar</b></sub></td>
+<td align="center"><sub><b>Gallery</b></sub></td>
+<td align="center"><sub><b>YouTube</b></sub></td>
+<td align="center"><sub><b>Play Store</b></sub></td>
+<td align="center"><sub><b>Contacts</b></sub></td>
+<td align="center"><sub><b>Folder</b></sub></td>
+<td align="center"><sub><b>App drawer</b></sub></td>
+</tr>
+</table>
+
+<sub>Click any icon to view it full size — all 29 live in <a href="app/src/main/res/drawable-nodpi/"><code>drawable-nodpi/</code></a>.</sub>
+
+</div>
+
+---
 
 ## Credits
 
 This project contains **none** of my original artwork. Everything visual here
 belongs to the people below, and the port exists only because they made it first.
 
-### Artwork — Niboshi (にぼし), also known as Atatata-P (あたたたP)
+### Artwork — Niboshi (にぼし) / (あたたたP)
 
 Every icon in this pack was drawn by **Niboshi**, a Japanese illustrator and PV
 artist who was prolific in the VOCALOID scene around 2008–2011, creating art and
@@ -21,7 +81,7 @@ The chibi Miku sprites, the leek-handled house, the folder art and the app drawe
 furniture are all theirs. Please do not reuse these images outside the spirit of
 the original themes.
 
-### Original themes — hyoromo (hiroki kawakami)
+### Original themes — hyoromo
 
 **hyoromo** built and published the original launcher themes that these assets
 were shipped in, and continues to publish Android apps today.
