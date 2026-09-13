@@ -26,6 +26,9 @@ for f in "$SRC"/*.png; do
   name="$(basename "$f" .png)"
   # Wallpapers are not icons and are deliberately not shipped.
   [[ "$name" == default_wallpaper_* ]] && continue
+  # d_home is the same drawing as allapp at 72px; shipping both puts two
+  # identical-looking entries in every launcher's picker.
+  [[ "$name" == d_home ]] && continue
 
   # -alpha background zeroes the colour of fully transparent pixels first;
   # without it the resampler blends undefined RGB into the edges as a halo.

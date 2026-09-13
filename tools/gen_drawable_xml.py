@@ -23,7 +23,6 @@ LAUNCHER_ART = {
     "ap_icon_on",
     "appfunchome",
     "d_del",
-    "d_home",
     "folder_close_up",
     "folder_open",
     "icon",

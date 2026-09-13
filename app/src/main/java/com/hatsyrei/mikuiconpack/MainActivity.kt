@@ -10,10 +10,10 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -173,13 +173,15 @@ private fun IconCell(entry: IconEntry, onClick: () -> Unit) {
         context.resources.getIdentifier(entry.drawable, "drawable", context.packageName)
     }
     if (id == 0) return
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.fillMaxWidth(),
+    ) {
         Image(
             painter = painterResource(id),
             contentDescription = stringResource(R.string.icon_content_description, entry.drawable),
             modifier = Modifier
-                .fillMaxWidth()
-                .aspectRatio(1f)
+                .size(64.dp)
                 .clickable(onClick = onClick),
         )
         Text(

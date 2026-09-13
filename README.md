@@ -6,7 +6,7 @@
 
 A port of hyoromo's 2010-era Hatsune Miku launcher themes into a modern Android
 icon pack that works on essentially any third-party launcher. No ads, no
-telemetry, no permissions — just 29 icons and an `appfilter.xml`.
+telemetry, no permissions — just 28 icons and an `appfilter.xml`.
 
 [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
@@ -59,7 +59,7 @@ telemetry, no permissions — just 29 icons and an `appfilter.xml`.
 </tr>
 </table>
 
-<sub>Click any icon to view it full size — all 29 live in <a href="app/src/main/res/drawable-nodpi/"><code>drawable-nodpi/</code></a>.</sub>
+<sub>Click any icon to view it full size — all 28 live in <a href="app/src/main/res/drawable-nodpi/"><code>drawable-nodpi/</code></a>.</sub>
 
 </div>
 
@@ -154,12 +154,12 @@ adb shell pm uninstall com.hatsyrei.mikuiconpack
 
 ## Contents
 
-29 icons, all of them from the original themes:
+28 icons, all of them from the original themes:
 
 - **20 app icons** — browser, calculator, calendar, camera, clock, contacts, email,
   facebook, gallery, gmail, gtalk, maps, market, messaging, music, phone, settings,
   twitter, voicesearch, youtube.
-- **9 pieces of launcher furniture** — the app drawer button, app panel frames,
+- **8 pieces of launcher furniture** — the app drawer button, app panel frames,
   folder art, drag targets and the leek house. Nothing consumes these
   automatically any more, but they are exposed in the picker so you can assign
   them by hand.
