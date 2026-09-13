@@ -27,12 +27,13 @@ for entry in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
     -strip PNG32:"$RES/mipmap-$dpi/ic_launcher.png"
 done
 
-# Adaptive foreground: 108dp canvas with the art confined to the central 72dp
-# safe zone, so no part of it is clipped by an aggressive system mask.
+# Adaptive foreground: 108dp canvas. The background layer is transparent, so the
+# mask clips visible artwork rather than a filled shape -- keep the art inside
+# the circle inscribed in the 72dp mask, not just the 72dp square.
 mkdir -p "$RES/drawable-nodpi"
 convert "$SRC" \
   -alpha set -alpha background \
-  -filter Lanczos -resize 288x288 \
+  -filter Lanczos -resize 240x240 \
   -background none -gravity center -extent 432x432 \
   -strip PNG32:"$RES/drawable-nodpi/ic_launcher_foreground.png"
 
